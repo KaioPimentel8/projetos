@@ -1,0 +1,27 @@
+let altura = window.prompt("informe a sua altura")
+console.log(altura);
+
+let peso = window.prompt("informe o seu peso")
+console.log(peso);
+
+function calcular_IMC(altura, peso){
+    var imc = peso/altura*altura;
+    return imc;
+
+
+if (imc < 18.5){
+    alert("baixo peso")
+}
+
+else if ( imc>18.5<24.99){
+    alert("normal")
+}
+
+else if ( imc > 25 < 29.99){
+    alert("sobrepeso")
+}
+
+else ( imc > 30){
+    alert("obesidade")
+}
+}
